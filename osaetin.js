@@ -7,7 +7,7 @@
 const services = [
   {
     title: 'Osaetin Technologies',
-    icon: 'fas fa-laptop-code',
+    icon: 'fas fa-code',
     desc: 'Cutting-edge software solutions that transform your business. From web apps to mobile platforms, we build scalable, secure, and stunning digital products.',
     list: [
       'React / Next.js / Vue.js',
@@ -20,7 +20,7 @@ const services = [
   },
   {
     title: 'Osaetin Media',
-    icon: 'fas fa-video',
+    icon: 'fas fa-film',
     desc: 'Professional event production that creates unforgettable experiences. From intimate gatherings to large-scale concerts, we handle every technical detail.',
     list: [
       'Concerts & Corporate Events',
@@ -33,7 +33,7 @@ const services = [
   },
   {
     title: 'Osaetin Realty',
-    icon: 'fas fa-building',
+    icon: 'fas fa-city',
     desc: 'Trusted real estate services that help you find, verify, and secure your dream property. Expert guidance through every step of your investment journey.',
     list: [
       'Premium Property Listings',
