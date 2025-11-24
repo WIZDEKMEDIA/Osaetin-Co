@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Osaetin & Co. - Premier software development, event production, and real estate services. Building digital products, producing unforgettable events, and securing properties.">
+  <title>Osaetin & Co. | Technology · Media · Real Estate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="osaetin.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <i class="fas fa-gem"></i>
+        <span>Osaetin<span class="accent">&Co</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#listings">Listings</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#book" class="btn btn-primary">Get Started</a>
+      </nav>
+      <div class="mobile-toggle" id="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <canvas id="hero-animation"></canvas>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i>
+          <span>Trusted by 500+ Clients Worldwide</span>
+        </div>
+        <h1 class="hero-title">
+          Building <span class="gradient-text">Digital Products</span>, Producing <span class="gradient-text">Unforgettable Events</span>, and Securing <span class="gradient-text">Properties</span>
+        </h1>
+        <p class="hero-subtitle">
+          Osaetin & Co. is your one-stop solution for cutting-edge software development, professional event production, and trusted real estate services. We transform visions into reality.
+        </p>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-primary btn-lg">
+            <i class="fas fa-rocket"></i>
+            Start Your Project
+          </a>
+          <a href="#portfolio" class="btn btn-secondary btn-lg">
+            <i class="fas fa-play-circle"></i>
+            View Our Work
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="stat-item">
+            <h3>98%</h3>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="stat-item">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">Comprehensive solutions across three powerful verticals</p>
+      </div>
+      <div class="service-cards" id="service-cards">
+        <!-- Generated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="fas fa-code"></i>
+          <h3 class="counter" data-target="250">0</h3>
+          <p>Apps Developed</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-calendar-check"></i>
+          <h3 class="counter" data-target="180">0</h3>
+          <p>Events Produced</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-home"></i>
+          <h3 class="counter" data-target="120">0</h3>
+          <p>Properties Sold</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-users"></i>
+          <h3 class="counter" data-target="500">0</h3>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured <span class="gradient-text">Portfolio</span></h2>
+        <p class="section-subtitle">Showcasing our best work across all divisions</p>
+      </div>
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="tech">Technology</button>
+        <button class="filter-btn" data-filter="media">Media</button>
+        <button class="filter-btn" data-filter="realty">Real Estate</button>
+      </div>
+      <div class="portfolio-items" id="portfolio-items">
+        <!-- Generated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Listings Section -->
+  <section id="listings">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Premium <span class="gradient-text">Properties</span></h2>
+        <p class="section-subtitle">Exclusive listings curated for discerning buyers</p>
+      </div>
+      <div class="listings" id="listings-container">
+        <!-- Generated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+        <p class="section-subtitle">Hear what our clients have to say</p>
+      </div>
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Generated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="book">
+    <div class="container">
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <h2>Let's Build Something <span class="gradient-text">Amazing</span> Together</h2>
+          <p>Whether you need a cutting-edge app, a spectacular event, or your dream property, we're here to make it happen.</p>
+          <div class="contact-methods">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Call Us</h4>
+                <p>+234 800 123 4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email Us</h4>
+                <p>hello@osaetin.co</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Visit Us</h4>
+                <p>Lagos, Nigeria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="booking-form-container">
+          <form id="booking-form">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i>
+                Full Name
+              </label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i>
+                Email Address
+              </label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">
+                <i class="fas fa-phone"></i>
+                Phone Number
+              </label>
+              <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000">
+            </div>
+            <div class="form-group">
+              <label for="serviceType">
+                <i class="fas fa-briefcase"></i>
+                Service Type
+              </label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">Select a service...</option>
+                <option value="tech">Software Development</option>
+                <option value="media">Event Production</option>
+                <option value="realty">Real Estate Inquiry</option>
+                <option value="consultation">General Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="details">
+                <i class="fas fa-comment-dots"></i>
+                Project Details
+              </label>
+              <textarea id="details" name="details" rows="4" placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i>
+              Send Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <i class="fas fa-gem"></i>
+            <span>Osaetin<span class="accent">&Co</span></span>
+          </div>
+          <p>Transforming ideas into reality through technology, media, and real estate excellence.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Software Development</a></li>
+            <li><a href="#services">Event Production</a></li>
+            <li><a href="#services">Real Estate</a></li>
+            <li><a href="#book">Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#book">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get the latest updates and offers.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Osaetin & Co. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="osaetin.js"></script>
+</body>
+</html>
