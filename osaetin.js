@@ -52,8 +52,7 @@ const portfolio = [
     tag: 'Tech',
     category: 'tech',
     desc: 'Full-stack marketplace with 50K+ active users',
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
-  },
+    gradient: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)'},
   {
     title: 'Music Festival 2024',
     tag: 'Media',

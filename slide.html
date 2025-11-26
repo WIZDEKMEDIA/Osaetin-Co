@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaetin & Co. - Image Gallery & Catalogue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --gray: #adb5bd;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(67,97,238,0.2);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .caption h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .caption p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background: #3f37c9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .gallery { gap: 20px; }
+            .gallery-img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Osaetin & Co. Gallery</h1>
+            <p class="subtitle">Explore our professional media consulting services, office spaces, and creative projects in Abuja.</p>
+        </div>
+    </header>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://lirp.cdn-website.com/a17476e8/dms3rep/multi/opt/GettyImages-1441231058-640w.jpg" alt="Strategic Consulting" class="gallery-img">
+                    <div class="caption">
+                        <h3>Osaetin Technologies</h3>
+                        <p>Cutting-edge software solutions that transform your business.</p>
+                        <a href="https://www.togethermediagroup.com/business-consulting" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://www.igt.com/-/media/6fbd5285ed664849859750480e07f9a9.ashx" alt="Professional Services" class="gallery-img">
+                    <div class="caption">
+                        <h3>Gaming & Media Services</h3>
+                        <p>Advanced consulting in interactive media solutions.</p>
+                        <a href="https://www.igt.com/products-and-services/gaming/services/professional-services" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://static.wixstatic.com/media/05766b_4541454ffc4e4d2286fef5c704dbce9a~mv2.jpg/v1/fill/w_824,h_488,fp_0.50_0.28,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/impact-about.jpg" alt="Impact Consulting" class="gallery-img">
+                    <div class="caption">
+                        <h3>Impact Consulting Office</h3>
+                        <p>Modern workspace for multifaceted professional services.</p>
+                        <a href="https://www.impactconsultingus.com/about" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://static.wixstatic.com/media/0a9eb3_d2b07c55537f463e9918679e0d456bc5~mv2.png/v1/fill/w_568,h_442,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0a9eb3_d2b07c55537f463e9918679e0d456bc5~mv2.png" alt="Dream Scape Consulting" class="gallery-img">
+                    <div class="caption">
+                        <h3>Career Boost Workshop</h3>
+                        <p>Team collaboration in consulting firm environment.</p>
+                        <a href="https://www.dreamscapecfirm.com/post/boost-your-career-with-dream-scape-consulting-inc" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://www.avid.com/_next/image?url=https%3A%2F%2Fedge.sitecorecloud.io%2Favidtech-d6a2e9a9%2Fmedia%2Fimages%2Fprofessional-services%2Fprofessional-services-1200x900.jpg%3Fh%3D900%26iar%3D0%26w%3D1200%26sc_lang%3Den&w=3840&q=75" alt="Avid Professional Services" class="gallery-img">
+                    <div class="caption">
+                        <h3>Media Production Services</h3>
+                        <p>State-of-the-art professional media consulting setup.</p>
+                        <a href="https://www.avid.com/professional-services" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://vantagepoint.io/hubfs/AI-Generated%20Media/Images/The%20image%20depicts%20a%20modern%20collaborative%20office%20space%20filled%20with%20bright%20natural%20light%20In%20the%20foreground%20a%20diverse%20team%20of%20professionals%20is%20engaged%20in%20a%20lively%20discussion%20around%20a%20conference%20table%20with%20laptops%20open%20and%20documents%20spread%20out%20A%20large%20sc.jpeg" alt="Vantage Point Office" class="gallery-img">
+                    <div class="caption">
+                        <h3>Collaborative Office Space</h3>
+                        <p>Modern team discussion in consulting firm.</p>
+                        <a href="https://vantagepoint.io/blog/sf/the-founding-story-and-unique-positioning-of-vantage-point-a-specialized-salesforce-consultancy-for-financial-services" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://www.fticonsulting.com/-/media/images/careers/career-landing-page/full-width-image-with-text-box-left/homepage---full-width-banner-mobile.jpg?h=512&iar=0&w=767&rev=47b74967922f48c78fc1891099eabef6&hash=BC91480567F874006D01B1AFC0CDD28C" alt="FTI Consulting Careers" class="gallery-img">
+                    <div class="caption">
+                        <h3>Corporate Consulting Roles</h3>
+                        <p>Professional environment for consulting services.</p>
+                        <a href="https://www.fticonsulting.com/careers/what-we-do/corporate-roles" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://careers.mimecast.com/media/sqldphkg/corporatefunctions.jpg?width=635&height=475&rnd=133402868293270000&width=635&height=475&rmode=crop&quality=75" alt="Mimecast Professional Services" class="gallery-img">
+                    <div class="caption">
+                        <h3>Corporate Functions Team</h3>
+                        <p>Dynamic professional services consultant workspace.</p>
+                        <a href="https://careers.mimecast.com/en/jobs/r5865/professional-services-consultant/" class="btn" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
